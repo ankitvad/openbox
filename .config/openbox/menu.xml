@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
+	<menu id="root-menu" label="Openbox 3">
+		<item label="Terminal">
+			<action name="Execute">
+				<execute>x-terminal-emulator</execute>
+			</action>
+		</item>
+		<item label="PCManFM">
+			<action name="Execute">
+				<execute>pcmanfm</execute>
+			</action>
+		</item>
+		<item label="Firefox">
+			<action name="Execute">
+				<execute>x-www-browser</execute>
+			</action>
+		</item>
+		<!-- This requires the presence of the 'menu' package to work -->
+		<item label="Geany">
+			<action name="Execute">
+				<execute>geany</execute>
+			</action>
+		</item>
+		<separator/>
+		<menu id="root-menu-454811" label="Apparence">
+			<item label="LXappearance">
+				<action name="Execute">
+					<execute>lxappearance</execute>
+				</action>
+			</item>
+			<item label="Nitrogen">
+				<action name="Execute">
+					<execute>nitrogen</execute>
+				</action>
+			</item>
+			<item label="Openbox config">
+				<action name="Execute">
+					<execute>obconf</execute>
+				</action>
+			</item>
+			<item label="Openbox menu">
+				<action name="Execute">
+					<execute>obmenu</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-383429" label="ConfigFiles">
+			<item label="Autostart">
+				<action name="Execute">
+					<execute>geany ~/.config/openbox/autostart</execute>
+				</action>
+			</item>
+			<item label="Bashrc">
+				<action name="Execute">
+					<execute>geany ~/.bashrc</execute>
+				</action>
+			</item>
+			<item label="Conky">
+				<action name="Execute">
+					<execute>geany ~/.config/.conkywine</execute>
+				</action>
+			</item>
+			<item label="Tint2">
+				<action name="Execute">
+					<execute>geany ~/.config/tint2/tint2rc</execute>
+				</action>
+			</item>
+			<item label="Compton">
+				<action name="Execute">
+					<execute>geany ~/.config/compton.conf</execute>
+				</action>
+			</item>
+			<item label="ObMenu (xml)">
+				<action name="Execute">
+					<execute>geany ~/.config/openbox/menu.xml</execute>
+				</action>
+			</item>
+			<item label="Shortcuts (rc.xml)">
+				<action name="Execute">
+					<execute>geany ~/.config/openbox/rc.xml</execute>
+				</action>
+			</item>
+			<item label="ObTheme (themerc)">
+				<action name="Execute">
+					<execute>/home/liquid/.config/theme-bind.sh</execute>
+				</action>
+			</item>
+		</menu>
+		<item label="Dmenu">
+			<action name="Execute">
+				<execute>/home/liquid/.config/dmenu-bind.sh</execute>
+			</action>
+		</item>
+		<separator/>
+		<item label="Reconfigure">
+			<action name="Reconfigure"/>
+		</item>
+		<item label="Restart">
+			<action name="Restart"/>
+		</item>
+		<item label="Exit">
+			<action name="Exit"/>
+		</item>
+	</menu>
+</openbox_menu>

@@ -1,0 +1,7 @@
+# $HOME/.config/openbox/autostart
+
+nitrogen --restore &
+tint2 &
+compton --config ~/.config/compton.conf &
+sleep 1 && 
+conky -c ~/.config/.conkywine &

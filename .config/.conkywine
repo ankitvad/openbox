@@ -1,0 +1,45 @@
+#conky inline
+# add to autostart conky -c path/to/file
+
+#to prevent window from moving
+use_spacer none
+update_interval 1
+minimum_size 1920 0
+
+#position
+gap_x 6
+gap_y 4
+alignment top_left
+
+#avoid flicker
+double_buffer yes
+
+#own window to run simultanious 2 or more conkys
+own_window  yes
+own_window_type desktop
+own_window_class conky
+own_window_transparent no
+own_window_hints undecorated,below,skip_taskbar,skip_pager,sticky
+
+#borders
+draw_borders no
+border_margin 1
+
+#shades
+draw_shades no
+
+#colour
+default_color  FFCEA9
+color2 FFFFFF
+color3 c63636
+color4 ff9300
+color5 FFCEA9 #clair
+color6 3c3c3c #back
+own_window_colour 585858
+
+#font
+use_xft yes
+xftfont liberation mono:pixelsize=10
+
+TEXT
+$alignc ${color}TEMPS: ${color2}${uptime_short} - ${color}CPU1: ${color2}${cpu cpu1}%   ${color}${cpugraph cpu1 10,50 FFFFFF FFFFFF} - ${color}CPU2: ${color2}${cpu cpu2}%   ${color}${cpugraph cpu2 10,50 FFFFFF FFFFFF} - ${color}RAM: ${color2}$memperc% ${color} ${memgraph 10,50 FFFFFF FFFFFF} - ${color}UP: ${color2}${upspeedf wlan0} kb/s ${color}${upspeedgraph wlan0 10,50 FFFFFF FFFFFF} - ${color}DOWN: ${color2}${downspeedf wlan0} kb/s ${color}${downspeedgraph wlan0 10,50 FFFFFF FFFFFF} - ${color}HDD: ${color2}${fs_free /} free
