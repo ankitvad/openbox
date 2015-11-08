@@ -1,26 +1,22 @@
 # Openbox WM
 This repo regroups all the config files needed to create a clean Openbox desktop. 
 
-### Xresources for font hinting
+### .config folder
+*tint2rc			Tint2 panel configuration
+*conkywine		Conky inline configuration
+*compton.conf	Compton configuration
+*autostart 		OB autostart file
+*menu.xml		OB menu configuration
+*rc.xml			OB setting and shortcuts
 
-nano  ~/.Xresources
+dmenu-bind.sh	Dmenu shortcut launcher
 
-    ! Xft settings
-    Xft.dpi:        96
-    Xft.antialias:  true
-    Xft.rgba:       rgb
-    Xft.hinting:    true
-    Xft.hintstyle:  hintslight
+### Openbox folder
+*.bashrc			Terminal configuration
+*.Xresources		Font hinting
 
 
-### Color script for terminal
-
-nano ~/.config/scripts/colors.sh
-chmod +x ~/.config/scripts/colors.sh
-
-Put an alias on your .bashrc to execute it easely.
-
-### Openbox menu
+### OB menu note:
 To add title to your Openbox menu, edit the ~/.config/openbox/menu.xml and add a label parameter to the separator. Weirdly, this can't be done through the obmenu tool.
 
     <separator label="Title"/>
