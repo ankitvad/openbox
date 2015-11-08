@@ -4,18 +4,17 @@ This repo regroups all the config files needed to create a clean Openbox desktop
 ![OpenBox desktop](dok.png)
 
 ### .config folder
-* tint2rc			Tint2 panel configuration
-* conkywine		Conky inline configuration
-* compton.conf	Compton configuration
-* autostart 		OB autostart file
-* menu.xml		OB menu configuration
-* rc.xml			OB setting and shortcuts
-
-dmenu-bind.sh	Dmenu shortcut launcher
+* _tint2rc_: Tint2 panel configuration
+* _conkywine_: Conky inline configuration
+* _compton.conf_: Compton configuration
+* _autostart_: OB autostart file
+* _menu.xml_: OB menu configuration
+* _rc.xml_: OB setting and shortcuts
+* _dmenu-bind.sh_: Dmenu shortcut launcher
 
 ### Openbox folder
-* .bashrc			Terminal configuration
-* .Xresources		Font hinting
+* _.bashrc_: Terminal configuration
+* _.Xresources_: Font hinting
 
 
 ### OB menu note:
